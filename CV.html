@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script defer src="./js/app.js"></script>
+    <title>Agustin Machado</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Quicksand:wght@300;500;700&family=Roboto+Mono:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img src="/foto/unnamed.jpg" alt="logo" height="50" width="50">
+                <div>
+                    Agustín Machado
+                    <br>
+                    (Web Designer)
+                </div>
+            </a>
+            <button class="open-menu" aria-label="Abrir menú">
+                <img src="/iconos/menu.svg" alt="Abrir menú">
+            </button>
+            <ul class="menu">
+                <button class="close-menu" aria-label="cerrar menú">
+                    <img src="./iconos/x.svg" alt="cerrar menú">
+                </button>
+                <li><a href="#profile">Perfil</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Hablidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="profile" id="profile">
+            <div class="profile-info">
+                <h1 class="profile-title">Hola, <br /> Soy Agustín Machado</h1>
+                <p class="profile-details">
+                    Mi nombre completo es Luis Agustín Peña Machado y tengo 22 años.
+                    Desde niño me encanta todo lo que engloba el mundo informático y desde hace unos años empecé a formarme
+                    en academias en linea y también de forma autodidacta. hace un año exactamente decidí dejar mi trabajo
+                    que nada que ver tenía con informática para empezar a formarme de forma intesiva y perseguir mi sueño.
+                    Soy una persona muy responsable, predispuesta, comprometida, dinámica y proactiva. Mis habilidades como
+                    programador son: Python, JavaScript, Django, HTML y CSS (actualmente me estoy formando para usar el
+                    framework 'React') y tengo muchisimas ganas de tener mi primer experiencia laboral para poder
+                    introducirme en el mundo informático de forma profesional.
+                </p>
+                <button class="profile-btn">
+                    Descargar cv
+                </button>
+            </div>
+            <span class="profile-img-section">
+                <img class="profile-img" src="/foto/unnamed.jpg" alt="progrmador">
+                <div class="profile-img-line"></div>
+            </span>
+        </section>
+    </div>
+
+    <section class="projects" id="projects">
+        
+        <div class="projects-body">
+            <h2 class="projects-title">Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-name">YardSale</div>
+                <div class="project-lenguages">(Html, CSS y JavaScript)</div>
+                <div class="project-description">Tienda Online</div>
+                <button class="projects-btn">
+                    <a href="#">Ir al proyecto</a>
+                </button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-name">Nuka-Cola Template</div>
+                <div class="project-description-container">
+                    <div class="project-lenguages">(Html, CSS y JavaScript)</div>
+                <div class="project-description">Diseño inspirado en el producto "Nuka-cola" del unverso Fallout</div>
+                </div>
+                <button class="projects-btn">
+                    <a href="#">Ir al proyecto</a>
+                </button>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="skills" id="skills">
+            <h2 class="skills-title">Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skills-skill">JavaScript</li>
+                <li class="skills-skill">Python</li>
+                <li class="skills-skill">Django</li>
+                <li class="skills-skill">CSS</li>
+                <li class="skills-skill">HTML</li>
+                <li class="skills-skill">Git</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="contact" id="contact">
+            <h2 class="contact-title">Contacto</h2>
+            <div class="contact-details">
+                <div class="contact-details-gruop">
+                    <p class="contact-label">Dirección:</p>
+                    <p class="contact-text">Carlos Crocker 2567. Montevideo, Uruguay</p>
+                </div>
+                <div class="contact-details-gruop">
+                    <p class="contact-label">Email:</p>
+                    <p class="contact-text">machadoagustin07@gmail.com</p>
+                </div>
+                <div class="contact-details-gruop">
+                    <p class="contact-label">Github:</p>
+                    <p class="contact-text">AgusDev07</p>
+                </div>
+            </div>
+            <form action="https://formsubmit.co/machadoagustin07@gmail.com" method="POST" class="contact-form">
+                <div class="contact-form-group">
+                    <label for="name">Nombre</label>
+                    <input required type="text" name="name" id="name">
+                </div>
+                <div class="contact-form-group">
+                    <label for="name">Email</label>
+                    <input required type="email" name="email" id="email">
+                </div>
+                <div class="contact-form-group">
+                    <label for="name">Mensaje</label>
+                    <textarea required rows="6" name="message" id="message"></textarea>
+                </div>
+
+                <button type="submit" class="contact-form-submit">Enviar</button>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/cv/1.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+            <nav class="social">
+                <ul class="social-list">
+                    <li>
+                        <a href="https://github.com/AgusDev07" target="_blank"><img src="./svg/github.svg" alt="Github profile"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/agustin-peña-machado-11118b233/" target="_blank"><img src="./svg/linkedin.svg" alt="LinkedIn profile"></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+</body>
+
+</html>
