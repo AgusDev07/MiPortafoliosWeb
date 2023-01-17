@@ -50,6 +50,10 @@
     cursor: pointer;
 }
 
+.profile-btn a{
+    color: var(--text-color-inverse);
+}
+
 .profile-btn:hover{
     filter: brightness(130%);
 }
@@ -61,6 +65,8 @@
     .profile-img {
         width: 100%;
         max-width: 350px;
+        border-radius: 50%;
+        transform: scaleX(-1);
     }
     
     .profile-img-section{
@@ -68,11 +74,7 @@
         position: relative;
     }
     
-    .profile-img-line{
-        position: absolute;
-        top: 287px;
-        
-    }
+    
     
     
     .profile{
